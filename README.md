@@ -1,4 +1,4 @@
-Executive Summary
+🚀 Executive Summary
 
 Space travel is the future and multimillionaires are investing in it. However, rocket launches are very costly but SpaceX’s Falcon 9 rocket’s first stage is reusable and saves a significant amount of cost. In this project, I have determined whether the first stage will land successfully and gathered information relevant to the launches. Classification models were build and the best model that predicts landing outcomes were chosen.
 
@@ -10,7 +10,7 @@ Key Takeaways:
 The success rate for landing outcome is 67% with highest successful landings on drone ships at 45%. Most successful launches came from launch site KSC LC-39A and ISS seems to be the most promising orbit when it comes to launch successes with heavy payloads. Boosters like B4 and FT successfully carried heavy payloads. All launch sites are located on the coastal areas with proximities close to railways and highways but further from cities. For predictive analysis, Decision Tree model gave the highest prediction accuracy for launch outcomes at 89%.
  
 
-Introduction
+🚀 Introduction
 
 Project background and context:
 
@@ -24,78 +24,23 @@ Answers I needed:
  
 Methodology
 1. Data collection methodology:
-
    - SpaceX API
-
    - BeautifulSoup HTML Parser           
-
 2. Data wrangling
-
     - Data cleaning done by dealing with missing values and generating labels
-
 3. Exploratory data analysis (EDA) using SQL and data visualization using Matplotlib and Seaborn
-
 4. Interactive visual analytics using Folium and Plotly Dash
-
 5. Predictive analysis with classification models using Scikit-Learn
 
- 
 
-Exploratory Data Analysis (Seaborn)
+🚀 Conclusions
 
+1. The success rate for landing outcome is at 67% with highest successful booster landings on drone ships at 45%.
+2. Most successful launches came from launch site KSC LC-39A with most launches done into orbits GTO and ISS, and ISS having higher mean success rate compared to GTO at 60% vs 50% respectively. 
+3. Boosters like FT has successfully carried payloads within 6000kg range and B4 carried massive payloads up to 10000kg. Most launch success were seen in orbits VLEO and ISS with massive payloads (<16000kg).
+4. All launch sites are located on the coastal areas with proximities close to railways and highways but further from cities. 
+5. For predictive analysis, Decision Tree model gave the highest accuracy for predicting the launch outcomes for future data at 89%.
 
-
-Flight number vs Launch Sites
-
-There are 3 launch sites on Figure 1 and we can see that most flights are successfully launched in CCAFS SLC-40 and least launches have been done in VAFB
-
-SLC 4E. On the contrary, CCAFS SLC-40 also has the most failed launches among the 3 launch sites.
-
- 
-
- Payload vs Launch Sites
-
-We can see on Figure 2 that both CCAFS SLC-40 and KSC LC-39A launch sites have launched rockets for massive payload mass of 16000kg. For VAFB-SLC
-
-4E site, there are no rockets launched for heavy payload mass - greater than 10000kg.
-
- 
-
-Success Rate vs Orbit Types
-
-We can infer from Figure 3 that the orbit types ES-L1, GEO, HEO and SSO have a mean success rate of 100% whereas GTO orbit has the lowest mean success
-
-rate at 50%. Orbit SO has no mean success rate indicating that the launches are unsuccessful.
-
- 
-
-
-
-Figure above shows that most flight launches were done at GTO and ISS orbits whereas ES-L1, SO, HEO and GEO have one launch each. It can also be
-
-deduced that the most flight launch failures was at GTO among all the orbits.
-
- 
-
-
-
-Figure shows that orbit VLEO has been used in launches with the heaviest payload mass at almost 16000kg, followed by ISS at 12000kg and PO at 10000kg.
-
-It is notable that payload masses of 6000kg and below have been done in orbits like ES-L1, SSO, HEO and GEO and all the launches have been successful.
-
- 
-
-
-
-There was no success seen in launches from 2010-2013. In 2014 there was a steep increase in success rate. The success rate was the highest in year 2019
-
-followed by 2017. In 2018 the success rate took a dip to 60%.
-
- 
-
- 
-
-Exploratory Data Analysis (SQL)
 
  
 
